@@ -27,7 +27,11 @@ let a = 10;
 
 if(true){
     let a = 11;
-    console.log('inside Block',a);
+    console.log('let inside Block',a);
+
+    const b = 10;
+    console.log('const inside block', b);
 }
 
-console.log('outside Block',a)
+console.log('let outside Block',a);
+console.log('const inside block', b);
