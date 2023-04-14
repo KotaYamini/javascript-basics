@@ -35,21 +35,21 @@ function addToCart(){
         console.log('34>>>',this);
         const that = this; // we need to store the reference of 'this' in another variable in order to get execute the inner nested function efficiently.
         setTimeout(function(){ 
-            console.log('37>>>>>>',that)
+            console.log('37>>>>>>',that);
             console.log(that.productname);
         });
     }
 
     // ES-6 Approach
-    this.getAllThings = () => {
-        console.log('45>>>>>',this) 
+    this.getAllThings = () => { // here 'this' wont work as it will takes as 'this' from the outer scope as it is referring to the window object
+        console.log('45>>>>>',this);
     }
 
     this.getThing = function(){
         console.log(this);
      
-        setTimeout(() =>{ //arrow function will refer to the parent function 'this' context
-            console.log('48>>>>>',this) 
+        setTimeout(() =>{ //arrow function will refer to the parent function 'this' context if it is a inner nested loop
+            console.log('48>>>>>',this);
         })
     }
 }
@@ -78,7 +78,7 @@ console.log(abcd(7,8,9));
 
 
 let myFunc = {  
-    showArgs : () => {  // here 'this' wont work as it will takes the 'this' from the outer scope
+    showArgs : () => {  // here 'this' wont work as it will takes the 'this' from the outer scope as it is referring to the window object
     console.log('showArgs',...arguments); 
    } ,
    showAbc: function(){ // here 'this' will work as it is referring to the object scope
