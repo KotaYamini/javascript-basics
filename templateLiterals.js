@@ -4,7 +4,7 @@ let statuss = "pending";
 
 function estimatedDelivery(){
     return "01-05-2021";
-}
+}   
 
 
 let productstatus = "Status of the product is";
