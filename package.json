@@ -1,0 +1,24 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrowFunctions.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KotaYamini/javascript-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KotaYamini/javascript-basics/issues"
+  },
+  "homepage": "https://github.com/KotaYamini/javascript-basics#readme",
+  "dependencies": {
+    "rxjs": "^7.8.0"
+  }
+}
