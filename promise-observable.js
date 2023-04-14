@@ -26,7 +26,7 @@ promise.then((r) => console.log('promise>>>>>>', r));
 // Observable
 /**
  * Until & Unless we subscribe to the observable , it wont call.
- * Observable will return the values for a period of time.
+ * Observable will return the values over a period of time.
  * Observables behaves like an array to apply some operation on the data like rxjs operators.
  * We can cancel the observable using unsubscribe method on observable
  * Why we unsubscribe the observable memory leakage when we route/navigate to other pages as well , this happens same using setInterval.
