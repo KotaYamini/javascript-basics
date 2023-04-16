@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/KotaYamini/javascript-basics#readme",
   "dependencies": {
-    "rxjs": "^7.8.0"
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.0",
+    "underscore": "^1.13.6"
   }
 }
