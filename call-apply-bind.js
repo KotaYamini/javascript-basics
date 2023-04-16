@@ -103,14 +103,14 @@ if (typeof window === "object") {
 
 /**
  * Execution =>
- * call & apply will execute at the time of binding.
+ * 'call' & 'apply' will execute at the time of binding.
  * bind will execute at the time when we execute the return function.
  * 
  * Parameter =>
- * call & bind are comma seperated.
+ * 'call' & 'bind' are comma seperated.
  * apply is array containing parameters with comma seperated.
  * 
  * isReturn => 
  * 'bind' will returns and calls the same func whenver need just like in 'click' function.
- *  'call' & 'apply' will returns and calls the same func at the time of binding.
+ * 'call' & 'apply' will returns and calls the same func at the time of binding.
  */
