@@ -89,17 +89,18 @@ const handler = employeeDetail.getFullName.bind(customer);
 handler('Andhrapradesh', 'consultant'); //  Harsha Kota and city is Andhrapradesh and profile is consultant
 
 // 'bind' will execute only whenever the user want to wait and then execute it just like button click events.
-function getFullNames(city, profile) {
+const getFullNames = (city, profile) => {
     console.log(this); // here it is pointing to the customerDetail object { firstName: 'Harsha', lastName: 'Kota' }
     console.log(`r>>>>${this.firstName} ${this.lastName} and city is ${city} and profile is ${profile}`);
 }
 
-if (typeof window === "object") {
-    const obj = document.getElementById('btn');
-    obj.addEventListener('click',
-        getFullNames.bind(customer, 'delhi', 'software Dev') //Harsha Kota and city is delhi and profile is software Dev
-    );
-}
+
+const obj = document.getElementById('btn');
+obj.addEventListener('click',
+    //  getFullNames.bind(customer, 'delhi', 'software Dev') //Harsha Kota and city is delhi and profile is software Dev
+    getFullNames.bind(customer, 'delhi', 'software Dev')
+);
+
 
 /**
  * Execution =>
