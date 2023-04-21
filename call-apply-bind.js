@@ -34,7 +34,7 @@ Employee.getFullName();
 //getEmpDetail();  // It will gives the o/p of undefined undefined
 
 
-//Traditional Approach of defining functions on two objects where it takes more time to code and do the repeate the same function on two different objects as well
+//Traditional Approach of defining functions on two objects where it takes more time to code and do the repeat the same function on two different objects as well
 
 const employee = {
     firstName: 'Yamini',
@@ -112,6 +112,6 @@ obj.addEventListener('click',
  * apply is array containing parameters with comma seperated.
  * 
  * isReturn => 
- * 'bind' will returns and calls the same func whenver need just like in 'click' function.
+ * 'bind' will returns and calls the same func whenever need just like in 'click' function.
  * 'call' & 'apply' will returns and calls the same func at the time of binding.
  */
