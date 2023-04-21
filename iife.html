@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .selected {
+        background-color: #FFFF00;
+    }
+</style>
+
+<body>
+    <ul>
+        <li class="item">Laptop</li>
+        <li class="item">Phone</li>
+        <li class="item">Chair</li>
+        <li class="item">Charger</li>
+    </ul>
+    <h1 id="count"></h1>
+    <script>
+
+        let cartCounter = (function () {
+            let count = 0;
+            return {
+                increment: () => count += 1,
+                decrement: () => count -= 1,
+                totalCount: () => count
+            }
+        })();
+
+        let products = document.getElementsByClassName("item");
+        console.log(products);
+
+        function updateCart() {
+            document.getElementById('count').innerHTML = cartCounter.totalCount();
+        }
+
+
+        for (let i = 0; i < products.length; i++) {
+            products[i].addEventListener('click', function () {
+
+                if (this.className.indexOf('selected') < 0) {
+                    this.className += 'selected';
+                    cartCounter.increment();
+                    updateCart();
+                } else {
+                    this.className = this.className.replace('selected', '');
+                    cartCounter.decrement();
+                    updateCart();
+                }
+
+            })
+        }
+    </script>
+
+</body>
+
+</html>
