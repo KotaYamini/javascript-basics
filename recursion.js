@@ -60,3 +60,44 @@ function calculateRecursiveTotal(n, total = 0) {
 }
 
 console.log(calculateRecursiveTotal(4)); //10
+
+
+// Using javascript objects
+const teamStructure = {
+    name: 'Kunal',
+    teams: [
+        {
+            name: 'Harish',
+            teams: [
+                {
+                    name: 'Alisha',
+                    teams: [
+                        {
+                            name: 'Yash',
+                            teams: []
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            name: 'Anurag',
+            teams: []
+        }
+    ]
+}
+
+function getTeamDetail(t) {
+    // base case
+    if (t.teams.length === 0) {
+        return t;
+    }
+
+    t.teams.forEach(team => {
+        console.log(team.name);
+        getTeamDetail(team);
+    });
+
+}
+
+getTeamDetail(teamStructure);
