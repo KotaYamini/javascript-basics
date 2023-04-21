@@ -45,7 +45,7 @@ console.log(users1.name); //Sneha  => Here js engine have checked for the name p
 console.log(users2.name); // undefined
 
 /**
- * Herewe should never try to add primitive type to the prototype (i.e.,Users.prototype.name = "Nisha";), 
+ * Here  we should never try to add primitive type to the prototype (i.e.,Users.prototype.name = "Nisha";), 
  * always use the constructor that means function and prototype altogether to solve this issue
  * As constructor will creates the different instance 
  */

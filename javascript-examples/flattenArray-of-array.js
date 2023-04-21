@@ -11,6 +11,9 @@ The base case is when the function should no longer recurse.'
 A recursive call is when a function calls itself, usually with slightly modified arguments that 'work down' to the base case.
  */
 
+
+// Flattening array using Recursion
+
 let arr = [1, 2, [3, 4, 5], 6, 7, [8, 9, [10, 11, 12], 13]];
 let output = [];
 
