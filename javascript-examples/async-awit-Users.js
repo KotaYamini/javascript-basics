@@ -1,3 +1,4 @@
+// Sending the email to each user using 'async-await'
 const users = ['harsha@gmail.com', 'yamini@gmail.com', 'rajani@gmail.com', 'uma@gmail.com'];
 
 
@@ -20,9 +21,11 @@ async function sendEmail() {
 
 sendEmail();
 /**
- Email to user rajani@gmail.com
- Email to user uma@gmail.com
- Email sent to all the users
+Email to user harsha@gmail.com
+Email to user yamini@gmail.com
+Email to user rajani@gmail.com
+Email to user uma@gmail.com
+Email sent to all the users
  */
 
 // Here we will print
