@@ -27,5 +27,3 @@ Email to user rajani@gmail.com
 Email to user uma@gmail.com
 Email sent to all the users
  */
-
-// Here we will print
