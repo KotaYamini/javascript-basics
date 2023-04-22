@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="header">Hello User</h1>
+    </div>
+    <script>
+
+        // Usage Function Currying in DOM manipulation
+
+        const updateNode = (id) => (content) => document.querySelector(`#${id}`).textContent = content;
+
+        const updateHeader = updateNode('header'); // header is send as  static parameter by not sending them as arguments
+
+        updateHeader('Hello Yamini'); // sneding the textCeontent everytime by calling the function
+        updateHeader('Hello Kota');
+    </script>
+</body>
+
+</html>
