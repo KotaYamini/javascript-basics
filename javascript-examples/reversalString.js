@@ -1,5 +1,10 @@
 const input = "I love Javascript";
 
+/**
+ * 1. split -> string to Array
+ * 2. reverse -> reverse a string
+ * 3. join -> array to string
+ */
 
 function reverseString(data) {
     const arrayInput = data.split(" ");
