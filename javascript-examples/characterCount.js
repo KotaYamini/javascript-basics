@@ -13,4 +13,4 @@ function getFrequency(string) {
     return freq;
 };
 
-console.log(getFrequency('Indivisibilities'));
+console.log(getFrequency('Indivisibilities')); //{ I: 1, n: 1, d: 1, i: 6, v: 1, s: 2, b: 1, l: 1, t: 1, e: 1 }

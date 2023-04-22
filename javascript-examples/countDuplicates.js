@@ -7,4 +7,4 @@ function countDuplicates(data) {
     return output;
 }
 
-console.log(countDuplicates(items));
+console.log(countDuplicates(items)); //{ a: 2, b: 3, c: 1, d: 2, e: 1, f: 4, g: 1 }

@@ -11,7 +11,7 @@ function reverseString(data) {
     return result.join(" ");
 }
 
-console.log(reverseString(input));
+console.log(reverseString(input)); //I evol tpircsavaJ
 
 // Reverse a string in javascript without using any inbuilt function
 
@@ -24,4 +24,4 @@ function reverse1(str) {
     return r;
 }
 
-console.log(reverse1("javascript"))
+console.log(reverse1("javascript"))  //tpircsavaj
