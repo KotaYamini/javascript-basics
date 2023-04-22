@@ -30,3 +30,10 @@ function reverse1(str) {
 }
 
 console.log(reverse1("javascript"))  //tpircsavaj
+
+
+function reverse(data) {
+    return data.split(" ").map(d => d.split("").reverse().join("")).join(" ");
+}
+
+console.log(reverse(input)); //I evol tpircsavaJ
