@@ -1,5 +1,4 @@
 import { Observable } from 'rxjs';
-import filter from 'rxjs/operators';
 
 // Promise
 /*
