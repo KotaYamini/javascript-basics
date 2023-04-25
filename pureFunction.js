@@ -14,9 +14,9 @@ Any operation that is not directly related to the final output of the function i
 
 A few more classic cases of the side effects are,
 
-1)Mutating(changing) the input itself.
-2) Querying/Updating DOM
-3 )Logging(even in the console)
+1) Mutating(changing) the input itself.
+2) Querying/Updating DOM.
+3) Logging(even in the console).
 4) Making an XHR/fetch call.
 
  */
