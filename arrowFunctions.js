@@ -26,7 +26,7 @@ console.log(obj());
 
 
 //arrow function with object's inner nested objects
-productname = '';
+let productname = '';
 function addToCart() {
     this.productname = 'Laptop';
 

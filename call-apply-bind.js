@@ -95,11 +95,11 @@ const getFullNames = (city, profile) => {
 }
 
 
-const obj = document.getElementById('btn');
-obj.addEventListener('click',
-    //  getFullNames.bind(customer, 'delhi', 'software Dev') //Harsha Kota and city is delhi and profile is software Dev
-    getFullNames.bind(customer, 'delhi', 'software Dev')
-);
+// const obj = document.getElementById('btn');
+// obj.addEventListener('click',
+//     //  getFullNames.bind(customer, 'delhi', 'software Dev') //Harsha Kota and city is delhi and profile is software Dev
+//     getFullNames.bind(customer, 'delhi', 'software Dev')
+// );
 
 
 /**
@@ -115,3 +115,83 @@ obj.addEventListener('click',
  * 'bind' will returns and calls the same func whenever need just like in 'click' function.
  * 'call' & 'apply' will returns and calls the same func at the time of binding.
  */
+
+// Example using call() method
+
+let employee1 = {
+    name: "John",
+    city: "New York",
+    salary: 20000,
+    salaryHike: function (hike) {
+        this.salary += hike ? hike : 10000;
+        console.log(this.salary);
+    }
+}
+
+let employee2 = {
+    name: "Doe",
+    city: "San Francisco",
+    salary: 25000
+}
+
+employee1.salaryHike();
+// 30000
+
+employee1.salaryHike.call(employee2);
+// 35000
+
+
+/**
+ * Now apply method is very similar to that of call except for one thing apply accepts the second argument as an array while call accepts it as comma separated argument.
+ */
+// Exmaple Using apply() method
+
+let emp1 = {
+    name: "John",
+    city: "New York",
+    salary: 20000,
+    salaryHike: function (hike) {
+        this.salary += hike ? hike : 10000;
+        console.log(this.salary);
+    }
+}
+
+let emp2 = {
+    name: "Doe",
+    city: "San Francisco",
+    salary: 25000
+}
+
+emp1.salaryHike.call(emp2, 15000); //25k+15k
+// 40000
+
+emp1.salaryHike.apply(emp2, [15000])  //15k+20k+25k
+// 55000
+
+// Example for calling bind function
+
+let employe1 = {
+    name: "John",
+    city: "New York",
+    salary: 20000,
+    salaryHike: function (hike) {
+        this.salary += hike ? hike : 10000;
+        console.log(this.salary);
+    }
+}
+
+let employe2 = {
+    name: "Doe",
+    city: "San Francisco",
+    salary: 25000
+}
+
+employe1.salaryHike.call(employe2, 15000);
+// 40000
+
+employe1.salaryHike.apply(employe2, [15000]);
+// 55000
+
+let hikeEmployee1Salary = employe1.salaryHike.bind(employe2);
+hikeEmployee1Salary(20000);
+  // 75000
