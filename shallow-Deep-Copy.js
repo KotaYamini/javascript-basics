@@ -2,7 +2,7 @@
 // callbyValue - DeepCopy - Immutable Object
 
 /**
- * Shallow Copy => When we try to copy the original value of a variable into another varaible then only the memory address of the original varaible is copied into another variable.
+ * Shallow Copy => When we try to copy the original value of a variable into another variable then only the memory address of the original variable is copied into another variable.
  * Deep Copy => When we try to copy the original value of a variable into another varaible then  it will point to different reference address.
  *  */
 
@@ -132,3 +132,19 @@ console.log(copiedObjj);
   address: { city: 'Goa', country: 'India' }
 }
  */
+
+
+/**
+ * Shallow Copy:
+A shallow copy creates a new object or array, but it only copies the references of the original elements. In other words, the new copy points to the same memory locations as the original elements.
+ Modifying a property of the original object or array will reflect in the shallow copy, as they still reference the same underlying data.
+ */
+
+// Shallow copy of an object
+const originalObjjj = { name: "John", age: 25 };
+const shallowCopyObj = Object.assign({}, originalObjjj);
+
+originalObj.age = 30; // Modifying originalObj
+
+console.log(originalObjjj);      // Output: { name: "John", age: 30 }
+console.log(shallowCopyObj);   // Output: { name: "John", age: 25 }
