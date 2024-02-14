@@ -8,7 +8,7 @@ function x(fn) {
 }
 
 function y() {
-    console.log("Hello from World!!!");
+    console.log("Hello from World!");
 }
 
 x(y);

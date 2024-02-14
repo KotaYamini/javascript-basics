@@ -2,7 +2,7 @@
  * Runner.prototype.gameOver =()=>{}
  * 
  * Inheritance is very important feature of any language as it allows us to use methods and properties from parent class to child class but how we handle inheritance in class based language , 
- * it is completely different in javascript as Javascript used prototype to implement inheritance .
+ * it is completely different in javascript, as it is used prototype to implement inheritance .
  * In ES6 we have class concepts now but construction function used prototype to implement inheritance.
 
  */
