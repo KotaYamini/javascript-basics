@@ -49,9 +49,14 @@ var cat = new Animal("Whiskers");
 // Access property and method
 console.log(cat.name);  // Output: Whiskers
 cat.sayName();          // Output: My name is Whiskers
+
 //   In this example, the Animal function serves as the prototype for the cat object. The cat object inherits the name property and the sayName method from its prototype.
-//  The prototype object itself can also have a prototype, forming a chain of objects that ultimately leads to the base object, which is usually the global object or Object.prototype. This chain allows objects to inherit properties and methods from their prototypes and their prototype's prototypes, and so on.
+//   The prototype object itself can also have a prototype, forming a chain of objects that ultimately leads to the base object, which is usually the global object or Object.prototype.
+//   This chain allows objects to inherit properties and methods from their prototypes and their prototype's prototypes, and so on.
 //   Prototypical inheritance allows for efficient sharing of properties and methods among objects and is a key feature of prototype-based programming languages like JavaScript.
+
+
+
 
 
 
