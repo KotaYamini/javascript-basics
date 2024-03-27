@@ -1,0 +1,40 @@
+
+// 1
+function display() {
+    console.log(this.x);
+}
+var obj = { x: 100 };
+display.call(obj);
+
+// 2
+let c = { greeting: 'Hi' };
+let d;
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);
+
+
+// 3
+function print() {
+    console.log('a');
+    for (var i = 0; i < 5; i++) {
+        setTimeout(function () {
+            console.log(i);
+        }, 0);
+    }
+    console.log('b');
+}
+
+print()
+
+// 4
+test()
+function test() {
+    console.log("hello")
+}
+
+
+var retest = function () {
+    console.log("hello")
+}
+retest();
